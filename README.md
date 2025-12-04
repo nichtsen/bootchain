@@ -26,7 +26,7 @@ flowchart TD
         B -->|special key combo| I[Samsung Download Mode Odin]
     end
 
-    subgraph Par["vendor properietary"]
+    subgraph Par["protected critical sections"]
         B --> C["Secondary Bootloader (SBL)"]
         C --> J["ABOOT"]
         J -->|normal boot| D
