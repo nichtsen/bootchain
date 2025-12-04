@@ -20,7 +20,7 @@ flowchart TD
         D[boot.img → Kernel]
     end
 
-    subgraph Rescue ["SoC-level rescue modes <br> survive bootloader death"]
+    subgraph Rescue ["SoC-level rescue modes"]
         B -->|test points or deep flash cable| G[Qualcomm EDL 9008 Mode]
         B -->|Vol Down + USB insert| H[MediaTek BROM Mode]
         B -->|special key combo| I[Samsung Download Mode Odin]
